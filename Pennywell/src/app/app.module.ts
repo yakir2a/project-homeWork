@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { StationComponent } from './station/station.component';
 import { StationsComponent } from './stations/stations.component';
+import { PlayingComponent } from './playing/playing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StationComponent,
-    StationsComponent
+    StationsComponent,
+    PlayingComponent
   ],
   imports: [
     BrowserModule

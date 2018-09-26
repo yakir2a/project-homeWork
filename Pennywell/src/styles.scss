@@ -189,6 +189,7 @@ body
 @media only screen and (max-device-width : 640px) {
   .station-content-wrapper
   {
+    margin-top: 20px;
     height: 200px;
     flex-direction: row;
     position: relative;
@@ -231,6 +232,7 @@ body
 @media only screen and (min-device-width : 640px) {
   .station-content-wrapper
   {
+    margin-top: 20px;
     height: 200px;
     flex-direction: row;
   }

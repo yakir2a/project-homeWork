@@ -10,11 +10,20 @@ import { Observable } from 'rxjs';
 export class StationsComponent implements OnInit {
 
   stations : Object;
+  picked: Object;
 
-  constructor(private data : StationsService) { }
+  constructor(private data : StationsService) { 
+  }
+
+  select(station : any){
+    if(station === this.picked)
+      station = undefined;
+    this.picked = station;
+  }
 
   ngOnInit(){
     this.stations = this.data.getStations();
+    this.picked = undefined;
   }
 
 }

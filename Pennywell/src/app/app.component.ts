@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  current : object
 
+  constructor(){
+    this.current = undefined
+  }
+  
+  playingEventHandler($event : any){
+    this.current = $event.name
+  }
 }
