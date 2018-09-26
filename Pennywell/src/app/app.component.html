@@ -7,7 +7,7 @@
       <div class="name">STATIONS</div>
     </div>
   </div>
-  <app-stations style="height: 100%"></app-stations>
-  <app-playing></app-playing>
+  <app-stations style="height: 80%" (pickedEvent)="playingEventHandler($event)"></app-stations>
+  <app-playing [playing] = "current"></app-playing>
 </div>
 </body>

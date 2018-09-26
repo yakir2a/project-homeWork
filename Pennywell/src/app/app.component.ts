@@ -13,6 +13,9 @@ export class AppComponent {
   }
   
   playingEventHandler($event : any){
-    this.current = $event.name
+    if($event === undefined)
+      this.current = undefined;
+    else
+      this.current = $event.name
   }
 }

@@ -88,7 +88,7 @@ body
 //70% for the list and another 10% for the bottom bar.
 .stations-list
 {
-  height: 70%;
+  height: 90%;
   text-align: center;
   overflow-y: auto;   
   overflow-x: hidden;
@@ -164,14 +164,12 @@ body
 
 .currently-playing-title
 {
-    display: none;
     color: $orange;
     font-weight: bold;
 }
 
 .currently-playing
 {
-    display: none;
     font-size: 24px;
     color: $grey;
 }
@@ -179,7 +177,6 @@ body
 //a station content that has a picture of the station and bottons
 .station-content {
     position: relative;
-    //overflow: hidden;
     max-height: 0;
     position: relative;
     transition: max-height 0.2s ease-out;

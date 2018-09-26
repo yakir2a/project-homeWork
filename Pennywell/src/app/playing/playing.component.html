@@ -1,3 +1,5 @@
-<p>
-  playing works!
-</p>
+<div class="bot-bar">
+  <div *ngIf="playing != undefined" class="bot-bar-wrapper">
+    <div class="currently-playing-title">CURRENTLY PLAYING</div>
+    <div class="currently-playing">{{playing}}</div>
+</div>
