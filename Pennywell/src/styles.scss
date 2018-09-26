@@ -179,7 +179,7 @@ body
 //a station content that has a picture of the station and bottons
 .station-content {
     position: relative;
-    overflow: hidden;
+    //overflow: hidden;
     max-height: 0;
     position: relative;
     transition: max-height 0.2s ease-out;
