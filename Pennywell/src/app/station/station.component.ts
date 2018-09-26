@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 
 @Component({
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StationComponent implements OnInit {
 
-  stationImg: string;
+ @Input() stationImg: string;
 
   constructor() { }
 
