@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StationComponent implements OnInit {
 
-  stationImg;
+  stationImg: string;
 
   constructor() { }
 
