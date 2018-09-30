@@ -1,6 +1,8 @@
 <ul class="stations-list" data-collapsible="expandable">
   <li *ngFor="let station of stations" class="station-focus">
-    <app-station *ngIf="picked === station" [stationImg] = 'station.img'></app-station>
+    <div [@collapsible] *ngIf="picked === station">
+      <app-station  [stationImg] = 'station.img'></app-station>
+    </div>
     <div class="station-focus-wrapper" (click)="select(station)">
       <div class="title">{{station.name}}</div>
       <div class="frequency">{{station.freq}}</div>
